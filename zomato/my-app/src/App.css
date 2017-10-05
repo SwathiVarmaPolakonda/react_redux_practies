@@ -1,0 +1,66 @@
+
+.body {
+    height: 100%;
+    width: 100%;
+  background-color: #FFCC00;
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center
+  }
+
+  .html {
+      height: 100%;
+       width: 100%;
+  }
+
+  .home-container {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     background-color: #FFCC00
+
+  }
+
+  .header {
+  font-size: 45px;
+  color: #fff;
+  font-weight: 100;
+}
+
+.input {
+    font-family: sans-serif;
+}
+.weather-details {
+    overflow: hidden;
+    margin-top: 35px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .temp {
+        font-size: 13.5em;
+        float: left;
+        width: 55%;
+        max-height: 200px;
+
+        @include mobile {
+            font-size: 9em;
+        }
+
+        .temp-number, .wi {
+            vertical-align: top;
+            line-height: 0.85em;
+        }
+
+        .wi {
+            font-size: 1.5em;
+            line-height: 0.8em;
+        }
+    }
+  }
